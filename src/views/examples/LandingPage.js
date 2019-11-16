@@ -1,21 +1,3 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
 // reactstrap components
@@ -37,8 +19,10 @@ import {
 
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
+import IndexNavbar from "components/Navbars/IndexNavbar";
 
 function LandingPage() {
   document.documentElement.classList.remove("nav-open");
@@ -50,20 +34,18 @@ function LandingPage() {
   });
   return (
     <>
-      <ExamplesNavbar />
+      {/* <ExamplesNavbar /> */}
+      <IndexNavbar />
       <LandingPageHeader />
       <div className="main">
         <div className="section text-center">
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
-                <h2 className="title">Let's talk product</h2>
+                <h2 className="title">Your next office</h2>
                 <h5 className="description">
-                  This is the paragraph where you can write more details about
-                  your product. Keep you user engaged by providing meaningful
-                  information. Remember that by this time, the user is curious,
-                  otherwise he wouldn't scroll to get here. Add a button if you
-                  want the user to see more.
+                  lots of great stuff about flexdesk, what an awesome product it is 
+                  etc etc. 
                 </h5>
                 <br />
                 <Button
@@ -150,7 +132,7 @@ function LandingPage() {
             </Row>
           </Container>
         </div>
-        <div className="section section-dark text-center">
+        {/* <div className="section section-dark text-center">
           <Container>
             <h2 className="title">Let's talk about us</h2>
             <Row>
@@ -311,8 +293,8 @@ function LandingPage() {
               </Col>
             </Row>
           </Container>
-        </div>
-        <div className="section landing-section">
+        </div> */}
+        <div className="section section-dark">
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
@@ -361,7 +343,7 @@ function LandingPage() {
           </Container>
         </div>
       </div>
-      <DemoFooter />
+      {/* <DemoFooter /> */}
     </>
   );
 }
